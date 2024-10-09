@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<!-- 
+	해야 할 것.
+	지도 API
+	알림신청 등의 버튼 활성화(MAIN, TICKET 파트)
+	
+	장소 : 옥천으로 하기 (사진에 있는 장소가 이미 옥천으로 돼 있음)
+	faq 답변 몇 개 바꿀 거 바꾸기
+
+	괜찮은 MapApi :
+		 Maps Embed API
+		 
+ -->
 <html>
 <head>
 <meta charset="UTF-8">
@@ -8,44 +20,48 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhweIuxC4oWtrk5Qe-i-Y1oeaKIEMkPfM&callback=console.debug&libraries=maps,marker&v=beta">	</script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	
 </head>
 <body>
-<!-- d -->
+
 	<!-- header -->
-	<header id="header">
-		 <div class="logo tiny5-regular">
-			<a href="">DONGWOONLIVET</a>
-		</div> 
-		<div class="menu">
-			<a href="">ABOUT</a>
-				<a href="">LINEUP</a>
-			<a href="">TIMETABLE</a>
-			<a href="">TICKET</a>
-			<a href="">FAQ</a>
-			<a href="">MAP</a>
-		</div>
-	</header>
+		<header id="header">
+			 <div class="logo tiny5-regular">
+				<a href="#section1">DONGWOONLIVET</a>
+			</div> 
+			<div class="menu">
+				<a href="#section2">ABOUT</a>
+				<a href="#section3">LINEUP</a>
+				<a href="#section4">TIMETABLE</a>
+				<a href="#section5">TICKET</a>
+				<a href="#section6">FAQ</a>
+				<a href="#section7">MAP</a>
+			</div>
+		</header>
 	
 	
 	<!-- main -->
-	<div class="main">
+	<div class="main" id="section1">
 		<div>
 			<div id="padding-80"></div>
 			<span class="nanum-gothic-regular">
-				국내 최대 규모 J-POP & Iconic Artist 페스티벌
+				国内最大規模 J-POP & Iconic Artist フェスティバル
 			</span>
 			<div id="padding-6"></div>
 			<img class="dongwoonlivet" src="img/dongwoonlivet.png" alt="dongwoonlivet"><br>
 			<img class="livet-2024" src="img/2024.png" alt="2024"><br>
 			<span class="nanum-gothic-regular font-2">
-				2024.11.8 FRI - 11.10 SUN<br>KINTEX HALL 7•8•9B
+				2024.11.8 FRI - 11.10 SUN<br>オクヒャンアパート
 			</span>
 			<div id="padding-21"></div>
-			<div class="btn up"><a href=""><i class="fa-regular fa-bell"></i> 알림신청</a></div>
+			<div class="btn up"><a href=""><i class="fa-regular fa-bell"></i>お知らせ申請</a></div>
 			<div id="padding-11"></div>
 			<div class="center">
-				<div class="btn under"><a href="">워터멜론티켓</a></div>
-				<div class="btn under"><a href="">티켓링크</a></div>
+				<div class="btn under"><a href="">ドンウンチケット</a></div>
+				<div class="btn under"><a href="">チケットリンク</a></div>
 			</div>
 			<div id="padding-21"></div>
 			<div class="main-img">
@@ -57,17 +73,17 @@
 	
 	
 	<!-- about -->
-	<div class="about Pretendard-Regular">
+	<div class="about Pretendard-Regular" id="section2">
 		<div class="fade-in-section">
 			<div class="about-text-span">
 				<div id="padding-150"></div>
 				<span class="about-span">About</span>
-				<span><strong>국내 최대 규모의</strong>	</span>
-				<span><strong>J-POP & Iconic Artist 페스티벌</strong></span>
-				<span>동운리벳 2024</span>
+				<span><strong>国内最大規模の</strong>	</span>
+				<span><strong>J-POP & Iconic Artist フェスティバル</strong></span>
+				<span>ドンウンリベット2024</span>
 				<div id="padding-21"></div>
-				<span>라이브 엔터테인먼트 브랜드 리벳(LIVET)과 'THE GLOW' 등의 페스티벌을 제작한 동운로크(DONGWOONLOCH)가</span>
-				<span>지금까지 볼 수 없었던 최대 규모의 J-POP & Iconic Artist를 중심으로 한 페스티벌을 개최합니다.</span>
+				<span>ライブエンターテインメントブランドのリベット(LIVET)と「THE GLOW」などのフェスティバルを制作したドンウンロク(DONGWOON LOCH)が</span>
+				<span>これまで見られなかった最大規模のJ-POP & Iconic Artistを中心としたフェスティバルを開催します。</span>
 			</div>
 			<div id="padding-65"></div>
 			<div class="about-on">
@@ -75,24 +91,24 @@
 					<div class="about-main">
 						<div class="about-container">
 							<div class="about-box">
-								<span id="about-span"><strong>일시 & 장소</strong></span>
+								<span id="about-span"><strong>日時 & 場所</strong></span>
 							</div>
 							<p><br></p>
 							<div class="about-content" id="about-content">
-								<span><strong>2024년 11월 8일 - 10일, 3일간</strong></span>
-								<span><strong>KINTEX HALL 7・8・9B 에서</strong></span>
+								<span><strong>2024年11月8日 - 10日、3日間</strong></span>
+								<span><strong>オクヒャンアパート で</strong></span>
 							</div>
 						</div>
 					</div>
 					<div class="about-main">
 						<div class="about-container">
 							<div class="about-box">
-								<span id="about-span"><strong>티켓오픈</strong></span>
+								<span id="about-span"><strong>チケットオープン</strong></span>
 							</div>
 							<p><br></p>
 							<div class="about-content" id="about-content">
-								<span><strong>8월 8일 목요일</strong></span>
-								<span><strong>티켓링크 / 워터멜론티켓</strong></span>
+								<span><strong>8月8日 木曜日</strong></span>
+								<span><strong>チケットリンク / ドンウンチケット</strong></span>
 							</div>
 						</div>
 					</div>
@@ -107,19 +123,19 @@
 					<div class="about-main">
 						<div class="about-container">
 							<div class="about-box">
-								<span id="about-span"><strong>출연 아티스트</strong></span>
+								<span id="about-span"><strong>出演アーティスト</strong></span>
 							</div>
 							<p><br></p>
 							<div class="about-content" id="about-content">
-								<span><strong>1차 라인업 발표</strong></span>
-								<span><strong>8월 1일 목요일</strong></span>
+								<span><strong>1次ラインナップの発表</strong></span>
+								<span><strong>8月1日木曜日</strong></span>
 							</div>
 						</div>
 					</div>
 					<div class="about-main">
 						<div class="about-container">
 							<div class="about-box">
-								<span id="about-span"><strong>제작협력</strong></span>
+								<span id="about-span"><strong>制作協力</strong></span>
 							</div>
 							<p><br></p>
 							<div class="about-content" id="about-content">
@@ -135,8 +151,8 @@
 							</div>
 							<p><br></p>
 							<div class="about-content" id="about-content">
-								<span><strong>추후 공개 될</strong></span>
-								<span><strong>더욱 다양한 정보들</strong></span>
+								<span><strong>今後公開される</strong></span>
+								<span><strong>より多様な情報</strong></span>
 							</div>
 						</div>
 					</div>
@@ -149,18 +165,20 @@
 	
 	
 	<!-- line up -->
-	<div class="back-black Pretendard-Regular">
+	<div class="back-black Pretendard-Regular" id="section3">
 		<div class="lineup-radius">
 			<div class="fade-in-section">
 				<div id="padding-145"></div>
 				<div class="lineup-center font-pretemdard">
 					<div class="lineupForm">
 						<div class="lineup-on"><span>LINEUP</span></div>
-						<div class="lineup-name"><span>동운리벳 2024만의</span></div>
-						<div class="lineup-name"><span>특별한 라인업</span></div>
+						<div class="lineup-name"><span>ドンウンリベット2024だけの</span></div>
+						<div class="lineup-name"><span style="padding-left: 15px;">特別なラインナップ</span></div>
 						<div id="padding-64"></div>
 					</div>
 				</div>
+			</div>	
+			<div class="fade-in-section">
 				<div class="lineup-center">
 					<div class="lineupForm">
 						<div class="lineupForm2">
@@ -225,7 +243,7 @@
 										<div class="line-singer">Cö shu Nie</div>
 									</div>
 								</div>
-								<div class="line-container-form">
+								<div class="line-container-form hidden">
 									<div class="line-container">
 										<div class="line-img" id="line-img">
 											<img src="img/singer/eill.jpg" alt="line-img">
@@ -245,7 +263,7 @@
 										<div class="line-singer">Fujii Kaze</div>
 									</div>
 								</div>
-								<div class="line-container-form">
+								<div class="line-container-form hidden">
 									<div class="line-container">
 										<div class="line-img" id="line-img">
 											<img src="img/singer/hamano-haruki.jpg" alt="line-img">
@@ -265,9 +283,7 @@
 										<div class="line-singer">Hitsujibungaku</div>
 									</div>
 								</div>
-								
-								
-								<div class="line-container-form">
+								<div class="line-container-form hidden">
 									<div class="line-container">
 										<div class="line-img" id="line-img">
 											<img src="img/singer/yuka.jpg" alt="line-img">
@@ -287,7 +303,7 @@
 										<div class="line-singer">Keina Suda</div>
 									</div>
 								</div>
-								<div class="line-container-form">
+								<div class="line-container-form hidden">
 									<div class="line-container">
 										<div class="line-img" id="line-img">
 											<img src="img/singer/kujira.jpg" alt="line-img">
@@ -307,7 +323,7 @@
 										<div class="line-singer">Macaroni Empitsu</div>
 									</div>
 								</div>
-								<div class="line-container-form">
+								<div class="line-container-form hidden">
 									<div class="line-container">
 										<div class="line-img" id="line-img">
 											<img src="img/singer/majiko.jpg" alt="line-img">
@@ -327,7 +343,8 @@
 										<div class="line-singer">milet</div>
 									</div>
 								</div>
-								<div class="line-container-form">
+								<!-- 
+								<div class="line-container-form hidden">
 									<div class="line-container">
 										<div class="line-img" id="line-img">
 											<img src="img/singer/mr-children.jpg" alt="line-img">
@@ -347,7 +364,7 @@
 										<div class="line-singer">natsunose</div>
 									</div>
 								</div>
-								<div class="line-container-form">
+								<div class="line-container-form hidden">
 									<div class="line-container">
 										<div class="line-img" id="line-img">
 											<img src="img/singer/nishina.jpg" alt="line-img">
@@ -367,7 +384,7 @@
 										<div class="line-singer">Penthouse</div>
 									</div>
 								</div>
-								<div class="line-container-form">
+								<div class="line-container-form hidden">
 									<div class="line-container">
 										<div class="line-img" id="line-img">
 											<img src="img/singer/queen-bee.jpg" alt="line-img">
@@ -387,7 +404,7 @@
 										<div class="line-singer">riria</div>
 									</div>
 								</div>
-								<div class="line-container-form">
+								<div class="line-container-form hidden">
 									<div class="line-container">
 										<div class="line-img" id="line-img">
 											<img src="img/singer/shy-taupe.jpg" alt="line-img">
@@ -407,7 +424,7 @@
 										<div class="line-singer">tonun</div>
 									</div>
 								</div>
-								<div class="line-container-form">
+								<div class="line-container-form hidden">
 									<div class="line-container">
 										<div class="line-img" id="line-img">
 											<img src="img/singer/tota.jpg" alt="line-img">
@@ -427,7 +444,8 @@
 										<div class="line-singer">YOAKE</div>
 									</div>
 								</div>
-								<div class="line-container-form">
+								 -->
+								<div class="line-container-form hidden">
 									<div class="line-container">
 										<div class="line-img" id="line-img">
 											<img src="img/singer/takaneko.jpg" alt="line-img">
@@ -447,9 +465,10 @@
 								</div>
 								<div id="padding-10"></div>
 								<div class="lineup-center align-center" id="padding-60">
-									<div class="line-more-btn">more</div>
+									<div class="line-more-btn">
+										<button class="more-btn">more</button>
+									</div>
 								</div>
-								<div id="padding-100"></div>
 							</div>
 						</div>
 					</div>
@@ -457,15 +476,15 @@
 			</div>
 		</div>
 	</div>
-	
+
 
 	<!-- timetable -->
-	<div class="width-100 center Pretendard-Regular">
+	<div class="width-100 center Pretendard-Regular" id="section4">
 		<div class="fade-in-section">
 		<div class="timetable-back">
 			<div id="padding-150"></div>
 			<div class="timetable-eng font-pretemdard"><span>TIMETABLE</span></div>
-			<div class="timetable-kor font-pretemdard"><span>타임테이블</span></div>
+			<div class="timetable-kor font-pretemdard"><span>タイムテーブル</span></div>
 			<div id="padding-64"></div>
 			<div class="timetable-img">
 				<img src="img/livet_preparing.png" alt="timetable_img">
@@ -477,7 +496,7 @@
 	
 	
 	<!-- ticket -->
-	<div class="ticket-background Pretendard-Regular">
+	<div class="ticket-background Pretendard-Regular" id="section5">
 		<div class="fade-in-section">
 			<div class="opacity-border"></div>
 			<div class="ticket-size flex-center">	
@@ -485,8 +504,8 @@
 					<div id="padding-160"></div>
 					<div class="ticket-on flex-center"><span><strong>ticket</strong></span></div>
 					<div class="ticket-content">
-						<span><strong>동운리벳 2024</strong></span>
-						<span><strong>티켓에 대해 알려드릴게요.</strong></span>
+						<span><strong>ドンウンリベット2024</strong></span>
+						<span><strong>チケットについてお教えします。</strong></span>
 					</div>
 					<div id="padding-64"></div>
 					
@@ -496,17 +515,17 @@
 							<div class="tic-con-box-in center">
 								<div class="tic-con-box-in-size">
 									<div id="padding-93"></div>
-									<div class="ticket-in-box-title center"><span>티켓오픈</span></div>
+									<div class="ticket-in-box-title center"><span>チケットオープン</span></div>
 									<div class="ticket-in-box-content-size">
 										<div class="ticket-content1">
-											<span><strong>일반 티켓오픈</strong></span>
-											<span><strong>8월 8일 목요일</strong></span>
+											<span><strong>一般チケットオープン</strong></span>
+											<span><strong>8月8日木曜日</strong></span>
 										</div>
 										<div class="ticket-content2 flex-center">
 											<div>
-												<span>원더리벳 2024 티켓은 멜론티켓, 티켓링크에서!</span>
-												<span>모든 티켓은 한정수량으로 판매되며, 소진 시 조기 마감됩니다.</span>
-												<span>* 해외 거주자는 멜론티켓 글로벌 페이지에서 예매해주세요.</span>
+												<span>ドンウンリベット2024チケットはドンウンチケット、チケットリンクからです！</span>
+												<span>すべてのチケットは数量限定で販売されており、売り切れの場合、早期締め切りとなります。</span>
+												<span>* 海外在住の方はメロンチケットのグローバルページで予約をお願いします。</span>
 											</div>
 										</div>
 									</div>
@@ -530,16 +549,16 @@
 								<div class="tic-con-box-middle-size"></div>
 								<div class="tic-con-box-in-size">
 									<div id="padding-93"></div>
-									<div class="ticket-in-box-title center">티켓 안내</div>
+									<div class="ticket-in-box-title center">チケットのご案内</div>
 									<div class="ticket-in-box-content-size">
 										<div class="ticket-content1">
-											<span><strong>1일권과 3일권</strong></span>
-											<span><strong>두 가지 타입으로 판매</strong></span>
+											<span><strong>1日券と3日券</strong></span>
+											<span><strong>2タイプでの販売です</strong></span>
 										</div>
 										<div class="ticket-content2 flex-center">
 											<div>
-												<span>티켓은 핸드폰 APP 내 모바일 티켓으로 발급됩니다.</span>
-												<span>예매페이지에서 필수 안내사항을 확인하세요.</span>
+												<span>チケットは携帯電話APP内のモバイルチケットで発行されます。</span>
+												<span>予約ページで必須案内事項をご確認いただけます。</span>
 											</div>
 										</div>
 									</div>
@@ -555,16 +574,16 @@
 							<div class="tic-con-box-in center">
 								<div class="tic-con-box-in-size">
 									<div id="padding-93"></div>
-									<div class="ticket-in-box-title center">티켓팅 성공하셨나요?</div>
+									<div class="ticket-in-box-title center">チケッティング、成功しましたか？</div>
 									<div class="ticket-in-box-content-size">
 										<div class="ticket-content1">
-											<span><strong>입장 및 관람 안내</strong></span>
+											<span><strong>入場及び観覧のご案内です</strong></span>
 										</div>
 										<div class="ticket-content2 flex-center">
 											<div>
-												<span>관람 전 예매페이지의 안내사항을 확인하세요.</span>
-												<span>손목밴드 착용 후 공연장 내 자유로운 이동이 가능합니다.</span>
-												<span>2개의 실내 스테이지와 휴식 공간을 마음껏 즐겨주세요.</span>
+												<span>観覧前に予約ページの案内事項をご確認いただけます。</span>
+												<span>リストバンドを着用した後、会場内の自由な移動が可能です。</span>
+												<span>2つの室内ステージとリラックスできる空間を心ゆくまでお楽しみくださいませ。</span>
 											</div>
 										</div>
 									</div>
@@ -582,14 +601,14 @@
 					
 					<div class="flex-center">
 						<div class="block">
-							<span>안 읽으면 손해!</span>
-							<span>필수안내 바로가기</span>
+							<span>読まないと損!</span>
+							<span>必須案内にすぐ行く</span>
 						</div>
 					</div>
 					<div id="padding-40"></div>
 					<div class="ticket-btn-wrap center">
-						<div class="btn under ticket-btn"><a href="">워터멜론티켓</a></div>
-						<div class="btn under ticket-btn"><a href="">티켓링크</a></div>
+						<div class="btn under ticket-btn"><a href="">ドンウンチケット</a></div>
+						<div class="btn under ticket-btn"><a href="">チケットリンク</a></div>
 					</div>
 					<div id="padding-70"></div>
 				</div>	
@@ -599,19 +618,19 @@
 	
 	
 	<!-- FAQ -->
-	<div class="faq flex-center Pretendard-Regular font-pretemdard">
+	<div class="faq flex-center Pretendard-Regular font-pretemdard" id="section6">
 		<div class="faq-back fade-in-section">
 			<div id="padding-140"></div>
 			<div class="faq-title"><span><strong>FAQ</strong></span></div>
 			<div class="faq-content">
-				<span><strong>궁금한 점은 여기에서</strong></span>
+				<span><strong>気になることはここから</strong></span>
 			</div>
 			<div id="padding-64"></div>
 			<div class="faq-search-out flex-center">
 				<div class="faq-search-in flex-center">
 					<div class="faq-search-box">
 						<div class="flex-center faq-box-middle">
-							<input class="faq-search-btn" placeholder="확인할 정보를 단어로 검색해보세요 ">
+							<input class="faq-search-btn" placeholder="確認する情報を単語で検索してみましょう ">
 							<i class="fa-solid fa-magnifying-glass"></i>
 						</div>
 					</div>
@@ -621,168 +640,288 @@
 			<!-- FAQ list -->
 			<div class="faq-list-back">
 				<div class="faq-list-head">FAQ</div>
-				<div class="faq-list">
-					<div class="faq-box faq-list-top-border">
+				<div class="faq-list faq-list-top-border">
+					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>일반</span></div>
+							<div class="faq-box-type"><span>入場</span></div>
 							<div class="faq-box-content">
-								<span>Q. 행사 종료 시각이 지연될 경우, 셔틀버스 출발 시각도 함께 변경되나요?</span>
+								<span>Q. イベントの終了時刻が遅れるのでしょうか？</span>
+							</div>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
+						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							最後の歌手によって異なりますが、おそらく遅延しないと予想されます。
+						</span>
+					</div>
+					<div class="faq-box">
+						<div class="faq-box-in flex-center">
+							<div class="faq-box-type"><span>入場</span></div>
+							<div class="faq-box-content">
+								<span>Q. バスの乗り場はどこで確認できますか？</span>
+							</div>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
+						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+					    <span>
+					        駅の近くで乗ればいいです。
+					    </span>
+					</div>
+					<div class="faq-box">
+						<div class="faq-box-in flex-center">
+							<div class="faq-box-type"><span>入場</span></div>
+							<div class="faq-box-content">
+								<span>Q. 飲食物の持ち込みは可能ですか？</span>
+							</div>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
+						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							いいえ、外部からの飲食物の持ち込みはお断りしており、500ml以下のペットボトル入りのミネラルウォーターのみお持ち込みいただけます。 会場内にフードゾーンが設けられる予定ですので、詳細は後日お知らせにてご確認お願いします。
+						</span>
+					</div>
+					<div class="faq-box">
+						<div class="faq-box-in flex-center">
+							<div class="faq-box-type"><span>入場</span></div>
+							<div class="faq-box-content">
+								<span>Q. 座席型の客席もありますか？ / 座って観覧できますか？</span>
+							</div>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
+						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							本公演は全席スタンディング観覧で行われるので、別途の座席型客席は用意されない点をご参考お願いします。 長時間フェスティバルをお楽しみいただけるよう、様々なF&Bブースや体験ブース、休憩スペースが用意される予定ですので、自由に空間を行き来しながら休憩や観覧ができます。
+						</span>
+					</div>
+					<div class="faq-box">
+						<div class="faq-box-in flex-center">
+							<div class="faq-box-type"><span>入場</span></div>
+							<div class="faq-box-content">
+								<span>Q. 舞台写真や映像撮影が可能ですか？</span>
 							</div>
 							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
 						</div>
 					</div>
-					<div class="faq-box">
-						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>일반</span></div>
-							<div class="faq-box-content">
-								<span>Q. 셔틀버스 탑승장소는 어디에서 확인할 수 있나요?</span>
-							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
-						</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							公演実況に関するストリーミングや撮影および録音は、公演の著作権を侵害する行為として厳しく禁止されます。 また、写真や映像撮影によって他人の視野や通行妨害を誘発する場合、現場スタッフの制裁を受けることがあります。 (三脚/自撮り棒/モノポッド/フラッシュなどの専門撮影装備 持ち込み禁止)
+						</span>
 					</div>
 					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>일반</span></div>
+							<div class="faq-box-type"><span>入場</span></div>
 							<div class="faq-box-content">
-								<span>Q. 음식물 반입이 가능한가요?</span>
+								<span>Q. 喫煙区域はありますか？</span>
 							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
 						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							建物や公演場の内部での喫煙は禁止されており、キンテックス展示場の外部の指定された喫煙区域で喫煙が可能です。
+						</span>
 					</div>
 					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>일반</span></div>
+							<div class="faq-box-type"><span>入場</span></div>
 							<div class="faq-box-content">
-								<span>Q. 좌석형 객석도 있나요? / 앉아서 관람할 수 있나요?</span>
+								<span>Q. クロークはありますか？</span>
 							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
 						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							はい。公演場内に物品保管所が運営される予定であり、利用に関する詳細は後日公開されます。
+						</span>
 					</div>
 					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>일반</span></div>
+							<div class="faq-box-type"><span>入場</span></div>
 							<div class="faq-box-content">
-								<span>Q. 무대 사진이나 영상 촬영이 가능한가요?</span>
+								<span>Q. 駐車は可能ですか？ / 公演観覧時、駐車料金の割引はありますか？</span>
 							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
 						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							団地内のどの場所に駐車されても構いません。
+						</span>
 					</div>
 					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>일반</span></div>
+							<div class="faq-box-type"><span>入場</span></div>
 							<div class="faq-box-content">
-								<span>Q. 흡연구역이 있나요?</span>
+								<span>Q. シャトルバスは運行していますか？ / シャトルバスはどのように利用できますか？</span>
 							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
 						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							シャトルバスは運行していません。 コミュニティバスをご利用いただきます。
+						</span>
 					</div>
 					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>일반</span></div>
+							<div class="faq-box-type"><span>入場</span></div>
 							<div class="faq-box-content">
-								<span>Q. 물품보관소가 있나요?</span>
+								<span>Q. 現場でリストバンドを代わりに受け取ることはできますか？</span>
 							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
 						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							いいえ。リストバンドの代理受領及び観客間の伝達は不可能です。 リストバンド交換ブースで[予約者本人確認]後、[リストバンド着用]がすぐに行われます。 リストバンドの代理受領およびリストバンドの観客間伝達はできない点、ご参考お願いします。
+						</span>
 					</div>
 					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>일반</span></div>
+							<div class="faq-box-type"><span>入場</span></div>
 							<div class="faq-box-content">
-								<span>Q. 주차가 가능한가요? / 공연 관람 시 주차요금 할인이 있나요?</span>
+								<span>Q. 現場に遅れて到着してもリストバンドの受け取り/入場が可能ですか？</span>
 							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
 						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							はい。ゲートオープン時間以降もリストバンド交換及び入場が可能です。
+							
+							※ リストバンドブースオープン:観覧当日の午前10:00~公演終了時まで
+							
+							※ ゲートオープン(観客入場):観覧当日の午前11:30~
+						</span>
 					</div>
 					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>일반</span></div>
+							<div class="faq-box-type"><span>入場</span></div>
 							<div class="faq-box-content">
-								<span>Q. 셔틀버스가 운영되나요? / 셔틀버스는 어떻게 이용 가능한가요?</span>
+								<span>Q. 公演場の外に出てから戻ってくることはできますか？ / 退場後、再入場できますか？</span>
 							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
 						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							はい。リストバンドを着用された方は、自由にステージ間移動及び公演場再入場が可能です。
+
+							※ リストバンドは紛失および毀損時の再発行ができませんので、該当するリストバンド(1日券/3日券)の観覧日程が終わるまで必ず着用をお願いします。
+						</span>
 					</div>
 					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>입장</span></div>
+							<div class="faq-box-type"><span>入場</span></div>
 							<div class="faq-box-content">
-								<span>Q. 현장에서 손목밴드를 대신 수령할 수 있나요?</span>
+								<span>Q. 8歳以下(未就学児)の入場は可能ですか？</span>
 							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
 						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							いいえ、本公演の観覧等級は8歳以上で、観覧年齢に該当しない場合は入場できません。
+						</span>
 					</div>
 					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>입장</span></div>
+							<div class="faq-box-type"><span>チケット</span></div>
 							<div class="faq-box-content">
-								<span>Q. 현장에 늦게 도착해도 손목밴드 수령 / 입장이 가능한가요?</span>
+								<span>Q. チケットの現場販売も行うのですか？</span>
 							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
 						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							現場販売は前売りが締め切られた後、残りのチケット券種及び数量に限り行われます。 現場販売の進行可否および販売券種などの内容は、前売り締め切りに迫り、公式SNSチャンネルを通じて公示されます。
+							
+							
+							
+							※ 現場販売オープン : 観覧当日 午前10:30 ~
+							
+							※ 前売り締め切り
+							
+							3日券 : 11月7日(木) 11AM
+							
+							金曜日 1日券 : 11月7日(木) 11AM
+							
+							土曜日 1日券 : 11月 8日(金) 11AM
+							
+							日曜日 1日券 : 11月9日(土) 11AM
+						</span>
 					</div>
 					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>입장</span></div>
+							<div class="faq-box-type"><span>チケット</span></div>
 							<div class="faq-box-content">
-								<span>Q. 공연장 외부로 나갔다가 돌아올 수 있나요? / 퇴장 후 재입장이 가능한가요?</span>
+								<span>Q. 海外居住者も予約できますか？ Is it possible for overseas residents to purchase tickets?</span>
 							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
 						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							はい。海外在住の方はドンウンンチケットのグローバルページでのみ予約が可能です。 チケット予約の詳細については、チケット予約先及びカスタマーサポートをご確認ください。
+			
+							Overseas residents must purchase on the global webstie of DONGWOON TICKET. For more information on ticket, please check the ticket site and customer center.
+						</span>
 					</div>
 					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>입장</span></div>
+							<div class="faq-box-type"><span>チケット</span></div>
 							<div class="faq-box-content">
-								<span>Q. 8세 이하(미취학아동) 입장이 가능한가요?</span>
+								<span>Q. 紙類のチケットはありませんか？</span>
 							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
 						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							はい。DONGWOONLIVET2024はモバイルチケットシステムで運営され、紙の実物チケットは別途配送されません。
+
+							※ ただし、一部の予約先を通じたグローバル予約者の場合、観覧当日のインフォメーションで現場受領だけで実物チケット受領が可能です。
+						</span>
 					</div>
 					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>티켓</span></div>
+							<div class="faq-box-type"><span>チケット</span></div>
 							<div class="faq-box-content">
-								<span>Q. 티켓 현장판매도 진행하나요?</span>
+								<span>Q. モバイル身分証明書で本人確認ができますか？</span>
 							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
 						</div>
+					</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							はい。モバイル身分証明書も有効身分証明書として認められます。
+
+							※ 有効身分証明書のご案内
+							
+							- 住民登録証既発給者: 住民登録証、運転免許証、期間満了前の旧型パスポート、住民登録証発給申請確認書、モバイル身分証
+							
+							- 住民登録証未発給者(小·中·高校生を含む):期間満了前の旧型パスポート、青少年証、青少年証発給申請確認書 - 外国人:期間満了前のパスポート、外国人登録証
+						</span>
 					</div>
 					<div class="faq-box">
 						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>티켓</span></div>
+							<div class="faq-box-type"><span>チケット</span></div>
 							<div class="faq-box-content">
-								<span>Q. 해외 거주자도 예매할 수 있나요? Is it possible for overseas residents to purchase tickets?</span>
+								<span>Q. モバイルチケットはどうやって確認しますか？</span>
 							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
+							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-chevron-up" style="display:none;"></i></span>
 						</div>
 					</div>
-					<div class="faq-box">
-						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>티켓</span></div>
-							<div class="faq-box-content">
-								<span>Q. 지류 티켓은 없나요?</span>
-							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
-						</div>
-					</div>
-					<div class="faq-box">
-						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>티켓</span></div>
-							<div class="faq-box-content">
-								<span>Q. 모바일 신분증으로 본인확인이 가능한가요?</span>
-							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
-						</div>
-					</div>
-					<div class="faq-box">
-						<div class="faq-box-in flex-center">
-							<div class="faq-box-type"><span>티켓</span></div>
-							<div class="faq-box-content">
-								<span>Q. 모바일 티켓은 어떻게 확인하나요?</span>
-							</div>
-							<span class="faq-show-icon"><i class="fa-solid fa-chevron-down"></i></span>
-						</div>
+					<div class="faq-reply" style="display: none;">
+						<span>
+							モバイルチケットは公演観覧当日、各予約先のモバイルアプリケーションを通じて予約した方のIDで発行されます。 予約者の有効身分証明書とモバイルチケットを持参して現場のリストバンドブースに訪問した後、本人確認およびリストバンド着用後に公演会場に入場できます。
+						</span>
 					</div>
 				</div>
 			</div>
@@ -792,22 +931,24 @@
 	
 	
 	<!-- map -->
-	<div class="back-wid-100 flex-center Pretendard-Regular font-pretemdard">
+	<div class="back-wid-100 flex-center Pretendard-Regular font-pretemdard" id="section7">
 		<div class="map-back fade-in-section">
 			<div id="padding-40"></div>
 			<div class="map-title flex-center">
 				<div><span><strong>MAP</strong></span></div>
 			</div>
 			<div class="map-content flex-center">
-				<div><span><strong>오시는 길</strong></span></div>
+				<div><span><strong>アクセス</strong></span></div>
 			</div>
 		</div>
 	</div>
 	<div id="padding-64"></div>
 	<div class="back-wid-100 flex-center fade-in-section Pretendard-Regular">
 		<div class="map-back ">
-			<div class="map-img-size fade-in-section">
-				<img src="img/map-img.png" alt="">
+			<div class="map fade-in-section">
+				<gmp-map center="36.31632995605469,127.57894897460938" zoom="17" map-id="DEMO_MAP_ID">
+			      <gmp-advanced-marker position="36.31632995605469,127.57894897460938" title="My location"></gmp-advanced-marker>
+			    </gmp-map>
 			</div>
 			<div id="padding-40"></div>
 		</div>
@@ -816,21 +957,21 @@
 				<div class="transport-radius flex-center"><span>BUS</span></div>
 			</div>
 			<div class="location flex-center">
-				<span>3호선 대화역 5번 출구 039, 082, 9700. 8109. 8407 (킨텍스제1전시장 하차)</span>
+				<span>303、304、311、313、323、324、401、402、411、610（オクヒャンアパートで下車）</span>
 			</div>
 			<div class="transport flex-center">
 				<div class="transport-radius flex-center"><span>SUBWAY</span></div>
 			</div>
 			<div class="location flex-center">
-				<span>33호선 대화역 2번 출구 하차 후 도보 12분</span>
+				<span>なし</span>
 			</div>
 			<div class="transport flex-center">
 				<div class="transport-radius flex-center"><span>CAR</span></div>
 			</div>
 			<div class="location location-last flex-center">
-				<span>킨텍스제1전시장 지상주차장</span>
-				<span>주차요금 : 승용, 승합차, 소형 화물(2.5톤 미만) 기본 30분 : 1,500원, 추가 10분당 : 500원, 일일요금 : 12,000원</span>
-				<span class="location-small">※주차 관련 상세사항은 FAQ에서 확인 가능합니다.</span>
+				<span>オクヒャンアパート地上駐車場</span>
+				<span>料金：なし</span>
+				<span class="location-small">※駐車の関連の詳細情報はFAQで確認できます。</span>
 			</div>
 		</div>
 	</div>
